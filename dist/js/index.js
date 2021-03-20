@@ -81,4 +81,8 @@ window.addEventListener('DOMContentLoaded', function () {
     }
     setClock('.timer', deadline);
 
+    // Modal 
+
+    
+
 });
