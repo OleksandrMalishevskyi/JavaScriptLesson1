@@ -118,7 +118,7 @@ window.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    const modalTimerId = setTimeout(openModal, 3000);
+   // const modalTimerId = setTimeout(openModal, 3000);
 
     function showModalByScroll() {
         if (window.pageYOffset + document.documentElement.clientHeight >= document.documentElement.scrollHeight) {
@@ -127,4 +127,20 @@ window.addEventListener('DOMContentLoaded', function () {
         }
     }
     window.addEventListener('scroll', showModalByScroll);
+
+    // classes for cards
+
+    class MenuCards {
+        constructor (src, alt,  title, discr, price ) {
+            this.src = src;
+            this.alt = alt;
+            this.title = title;
+            this.discr = discr;
+            this.price = price;
+            this.transfer = 27
+        }
+        changeUAN() {
+            this.price = this.price * this.transfer;
+        }
+    }
 });
